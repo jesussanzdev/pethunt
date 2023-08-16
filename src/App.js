@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import Hello from './Hello';
+import ContactButton from './components/ContactButton';
 
 function App() {
   return (
@@ -10,7 +10,7 @@ function App() {
         <h2 className="text-6xl">
           Bienvenidos a PetHunt!
         </h2>
-        <Hello></Hello>
+        <ContactButton></ContactButton>
         <br></br>
         <a
           className="App-link"

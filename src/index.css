@@ -2,16 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@layer components {
+
+
+  .contactButton{
+    
+  }
+
+  .btn {
+    @apply flex gap-2 items-center justify-center py-2 px-4 font-semibold shadow-md rounded-lg;
+  }
+
+  .btn.btn-light {
+    @apply bg-white text-gray-500;
+  }
+
+  .btn.btn-danger {
+    @apply text-white bg-red-600 shadow-red-400/40;
+  }
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
