@@ -1,13 +1,10 @@
-# Project Dependencies
+# Dependencies
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
 
 React 18.2.0
 Node 16.13.0
 Tailwind 3.3.3
-Express tbd
-
 
 ## Available Scripts
 
@@ -21,51 +18,43 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
+## Description
 
-## Learn More
-
-- Advanced React Concepts:
-
-https://docs.google.com/document/d/1Chu1yNdcxIF8ZTv9G5DVJ6iwY5adOFyZK8nIga0sk2U/edit?usp=sharing
-
+Web application with React and Tailwind (oriented towards mobile-first) for posting lost animal ads in your area. The ads will expire after 30 days of being posted. The goal is to centralize and streamline all lost animals in one application through which you can directly contact the owner.
 
 ## Roadmap
 
-Pet Hunt! 
+1.0 (on development)
 
-Aplicación web con React y Tailwind (orientada a mobile first) para poder publicar anuncios de animales perdidos en tu zona.
+1. Project Creation and Library Installation
+2. Grid-Style Listing with a Mobile-First Approach
+3. Featured Image, "I Found It!" - with a Confirmatory Popup and Direct Phone Call: You are about to call Pepe, the owner of the animal named X.
+4. Infinite Scroll (React Hook)
+5. Basic Header
+6. Base Card: Condensing Minimal Information
 
-- Fase 1 del proyecto
+1.1.0
 
-1. Creacion del proyecto e instalacion de librerias
-2. Listado en formato Grid orientado al mobile first
-3. Imagen destacada, ¡Lo he encontrado! - con pop up confirmativo y llamada directa al telefono: Vas a llamar Pepe, el dueño/a de X animal.
-4. Scroll infinito (hook de react) - 5 horas
-5. Mockups enlazado a alguna base de datos autogenerada - 2 horas
-6. Perfeccionamiento de la tarjeta: condensar información mínima
+1. Floating Button for Creating an Ad and Creation Form
+2. Database with Express:
+    Animal Name (Required)
+    Animal Type (Required)
+    Description (Optional)
+    Owner's Name
+    Contact Phone
+    
+3. View Details on the Card: Name, Description, Last Seen On
 
-- Fase 2 del proyecto
+1.2.0
 
-1. Botón flotate para crear anuncio y formulario de creación
-2. Base de datos con express:
-- Nombre del animal (obligatorio)
-- Tipo de animal (obligatorio)
-- Descripcion (opcional)
-- Nombre del dueño
-- Telefono de contacto
-3. Ver detalle en la tarjeta: nombre, descripcion, ultima vez visto en
+1. Filters for:
 
+    Animal Type
+    Distance from My Location
+    Ad Expiration after 40 Days
 
-Funcionalidad 
+2. "Happy Endings" Section (Blog Format)
 
-- Fase 3 del proyecto
+1.3.0
 
-1. Filtros por:
-
-- Tipo de animal
-- Distancia respecto a mi
-- Expiración de anuncios a los 40 días
-
-2. Seccion: finales felices (formato blog)
-
-3. ¿Buscador?
+1. Search Functionality?
