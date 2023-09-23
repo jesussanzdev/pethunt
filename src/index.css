@@ -18,7 +18,7 @@
   }
 
   .btn.btn-danger {
-    @apply text-white bg-red-600 shadow-red-400/40;
+    @apply text-white bg-orange-600	 shadow-red-400/40;
   }
 }
 

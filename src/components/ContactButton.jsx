@@ -1,4 +1,5 @@
 
+import { Phone } from "react-feather";
 import Modal from "./Modal";
 import { useState } from "react";
 
@@ -7,7 +8,7 @@ export default function ContactButton() {
     return (
         <main className="contactButton">
             <button className="btn btn-danger text-lg" onClick={() => setOpen(true)}>
-                Contactar
+            <Phone />
             </button>
 
             <Modal open={open} onClose={() => setOpen(false)}>

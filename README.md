@@ -38,20 +38,23 @@ Aplicación web con React y Tailwind (orientada a mobile first) para poder publi
 - Fase 1 del proyecto
 
 1. Creacion del proyecto e instalacion de librerias
-2. Listado en formato slide orientado al mobile first
-3. Ver detalle: nombre, descripcion, ultima vez visto en
-4. Imagen destacada, ¡Lo he encontrado! - con pop up confirmativo y llamada directa al telefono: Vas a llamar Pepe, el dueño/a de X animal.
-5. Mockups de base de datos con express
+2. Listado en formato Grid orientado al mobile first
+3. Imagen destacada, ¡Lo he encontrado! - con pop up confirmativo y llamada directa al telefono: Vas a llamar Pepe, el dueño/a de X animal.
+4. Scroll infinito (hook de react) - 5 horas
+5. Mockups enlazado a alguna base de datos autogenerada - 2 horas
+6. Perfeccionamiento de la tarjeta: condensar información mínima
 
 - Fase 2 del proyecto
 
-1. Botón anuncio y formulario de creación
+1. Botón flotate para crear anuncio y formulario de creación
 2. Base de datos con express:
 - Nombre del animal (obligatorio)
 - Tipo de animal (obligatorio)
 - Descripcion (opcional)
 - Nombre del dueño
 - Telefono de contacto
+3. Ver detalle en la tarjeta: nombre, descripcion, ultima vez visto en
+
 
 Funcionalidad 
 
@@ -64,3 +67,5 @@ Funcionalidad
 - Expiración de anuncios a los 40 días
 
 2. Seccion: finales felices (formato blog)
+
+3. ¿Buscador?
