@@ -3,6 +3,8 @@ import Header from './components/Header';
 import AnimalCard from './components/AnimalCard';
 import bgImage1 from './assets/1.jpg';
 import bgImage2 from './assets/2.webp';
+import { Routes, Route } from 'react-router-dom';
+import About from './components/About';
 
 const animals = [
   {
@@ -72,19 +74,30 @@ const animals = [
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-        <div className="text-center">
-          <h2 className="text-white text-2xl mt-4 mb-4">Últimas publicaciones</h2>
-        </div>
-        <div className="container mx-auto grid pt-8 pb-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
-            {animals.map((animal, index) => (
-              <AnimalCard key={index} animal={animal} />
-            ))}
-          </div>
-        </div>
-    </div>
+    <Routes>
+      <Route path="/" element={
+        <>
+        <Header />
+         <div className="text-center">
+           <h2 className="text-white text-2xl mt-4 mb-4">Últimas publicaciones</h2>
+         </div>
+         <div className="container mx-auto grid pt-8 pb-8">
+           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+             {animals.map((animal, index) => (
+               <AnimalCard key={index} animal={animal} />
+             ))}
+           </div>
+         </div>
+        </>
+      }
+      />
+      <Route path="/about" element={
+        <>
+        <Header />
+        <About />
+        </>
+      } />
+    </Routes>
   );
 }
 
