@@ -6,6 +6,7 @@ const AnimalForm = () => {
     description: '',
     image: '',
     location: '',
+    telephone: '',
     lastSeen: '',
   });
 
@@ -71,6 +72,18 @@ const AnimalForm = () => {
               id="location"
               name="location"
               value={formData.location}
+              onChange={handleInputChange}
+              className="mt-1 p-2 w-full border rounded-md"
+            />
+          </div>
+          <div className="mb-4">
+            <label htmlFor="location" className="block text-sm font-medium text-white">Teléfono de contacto</label>
+            <input
+              placeholder="867 732 732"
+              type="text"
+              id="telephone"
+              name="telephone"
+              value={formData.telephone}
               onChange={handleInputChange}
               className="mt-1 p-2 w-full border rounded-md"
             />

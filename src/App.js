@@ -31,6 +31,13 @@ const animals = [
     lastSeen: '5 de septiembre',
   },
   {
+    name: 'Tommy',
+    description: 'Gato de color canela con rayas marrones. Ojos amarillos, es muy tranquilo. Desde hace dos meses lleva un collar negro.',
+    image: bgImage1,
+    location: 'Zaragoza, España',
+    lastSeen: '2 de septimebre',
+  },
+  {
     name: 'Kenai',
     description:'Mezcla de gato montés con español, rayas naranjas y blancas. Tiene las patas blancas y los amarillos.',
     image: '',
@@ -65,13 +72,7 @@ const animals = [
     location: 'Málaga, España',
     lastSeen: '20 de abril',
   },
-  {
-    name: 'Tommy',
-    description: 'Gato de color canela con rayas marrones. Ojos amarillos, es muy tranquilo. Desde hace dos meses llega un collar negro.',
-    image: bgImage1,
-    location: 'Zaragoza, España',
-    lastSeen: '27 de febrero',
-  },
+
 ];
 
 function App() {
