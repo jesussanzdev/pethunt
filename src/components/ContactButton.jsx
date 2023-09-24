@@ -20,7 +20,7 @@ export default function ContactButton() {
                         </p>
                     </div>
                     <div className="flex gap-4">
-                        <button className="btn btn-danger w-full text-sm">Llamar</button>
+                        <button className="btn btn-danger w-full text-sm cursor-not-allowed opacity-50" disabled>Llamar</button>
                         <button className="btn btn-light w-full text-sm" onClick={() => setOpen(false)}>Cancelar</button>
                     </div>
                 </div>
