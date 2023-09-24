@@ -5,56 +5,16 @@ import bgImage1 from './assets/1.jpg';
 import bgImage2 from './assets/2.webp';
 import { Routes, Route } from 'react-router-dom';
 import About from './components/About';
+import CreateForm from './components/CreateForm';
+import { PlusCircle } from "react-feather";
 
 const animals = [
   {
-    name: 'Tommy',
-    description: 'Gato de color canela con rayas marrones. Ojos amarillos, es muy tranquilo.',
-    image: bgImage1,
-    location: 'Zaragoza, España',
-    lastSeen: '27 de febrero',
-  },
-  {
-    name: 'Pelusa',
-    description: 'Pelusa es una perrita mestiza de tamaño mediano. Su pelaje es blanco y negro. Tiene una personalidad juguetona y cariñosa. Se perdió en Málaga, España, el 20 de abril.',
-    image: bgImage2,
-    location: 'Málaga, España',
-    lastSeen: '20 de abril',
-  },
-  {
-    name: 'Rex',
-    description: 'Rex es un perro pastor alemán de pelaje negro y tostado. Es amigable y bien entrenado. Lleva un collar rojo con una etiqueta de identificación.',
-    image: '',
-    location: 'Madrid, España',
-    lastSeen: '15 de mayo',
-  },
-  {
-    name: 'Bobby',
-    description: 'Bobby es un perro Labrador Retriever de pelaje dorado y amigable. Lleva un collar azul con una placa de identificación. Se perdió en Valencia, España, el 12 de junio.',
-    image: '',
-    location: 'Valencia, España',
-    lastSeen: '12 de junio',
-  },
-  {
-    name: 'Miau',
-    description: 'Miau es un gato de pelo largo y negro con ojos verdes. Es un felino tranquilo y curioso. Se perdió en Sevilla, España, el 8 de agosto.',
-    image: '',
-    location: 'Sevilla, España',
-    lastSeen: '8 de agosto',
-  },
-  {
-    name: 'Kenai',
+    name: 'Toby',
     description:'Mezcla de gato montés con español, rayas naranjas y blancas. Tiene las patas blancas y los amarillos.',
     image: '',
     location: 'Zaragoza, España',
-    lastSeen: '27 de agosto',
-  },
-  {
-    name: 'Simba',
-    description: 'Simba es un gato siamés de ojos azules intensos. Es de tamaño pequeño y tiene un collar rojo con una chapa de identificación.',
-    image: '',
-    location: 'Barcelona, España',
-    lastSeen: '5 de septiembre',
+    lastSeen: '27 de septiembre',
   },
   {
     name: 'Luna',
@@ -64,12 +24,54 @@ const animals = [
     lastSeen: '15 de septiembre',
   },
   {
-    name: 'Toby',
+    name: 'Simba',
+    description: 'Simba es un gato siamés de ojos azules intensos. Es de tamaño pequeño y tiene un collar rojo con una chapa de identificación.',
+    image: '',
+    location: 'Barcelona, España',
+    lastSeen: '5 de septiembre',
+  },
+  {
+    name: 'Kenai',
     description:'Mezcla de gato montés con español, rayas naranjas y blancas. Tiene las patas blancas y los amarillos.',
     image: '',
     location: 'Zaragoza, España',
-    lastSeen: '27 de septiembre',
-  }
+    lastSeen: '27 de agosto',
+  },
+  {
+    name: 'Miau',
+    description: 'Miau es un gato de pelo largo y negro con ojos verdes. Es un felino tranquilo y curioso. Se perdió en Sevilla, España, el 8 de agosto.',
+    image: '',
+    location: 'Sevilla, España',
+    lastSeen: '8 de agosto',
+  },
+  {
+    name: 'Bobby',
+    description: 'Bobby es un perro Labrador Retriever de pelaje dorado y amigable. Lleva un collar azul con una placa de identificación. Se perdió en Valencia, España, el 12 de junio.',
+    image: '',
+    location: 'Valencia, España',
+    lastSeen: '12 de junio',
+  },
+  {
+    name: 'Rex',
+    description: 'Rex es un perro pastor alemán de pelaje negro y tostado. Es amigable y bien entrenado. Lleva un collar rojo con una etiqueta de identificación.',
+    image: '',
+    location: 'Madrid, España',
+    lastSeen: '15 de mayo',
+  },
+  {
+    name: 'Pelusa',
+    description: 'Pelusa es una perrita mestiza de tamaño mediano. Su pelaje es blanco y negro. Tiene una personalidad juguetona y cariñosa. Se perdió en Málaga, España, el 20 de abril.',
+    image: bgImage2,
+    location: 'Málaga, España',
+    lastSeen: '20 de abril',
+  },
+  {
+    name: 'Tommy',
+    description: 'Gato de color canela con rayas marrones. Ojos amarillos, es muy tranquilo. Desde hace dos meses llega un collar negro.',
+    image: bgImage1,
+    location: 'Zaragoza, España',
+    lastSeen: '27 de febrero',
+  },
 ];
 
 function App() {
@@ -88,13 +90,22 @@ function App() {
              ))}
            </div>
          </div>
+         <a className="btn btn-danger" style={{position: 'fixed', top: '92%', right: 10}} href="crear-anuncio">
+            <PlusCircle />
+          </a>
         </>
       }
       />
-      <Route path="/about" element={
+      <Route path="/sobre-nosotros" element={
         <>
         <Header />
         <About />
+        </>
+      } />
+      <Route path="/crear-anuncio" element={
+        <>
+        <Header />
+        <CreateForm />
         </>
       } />
     </Routes>
