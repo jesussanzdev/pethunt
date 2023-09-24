@@ -24,28 +24,27 @@ Web application with React and Tailwind (oriented towards mobile-first) for post
 
 ## Roadmap
 
-1.0 (on development)
+Version 1.0 - Done
 
 1. Project Creation and Library Installation
 2. Grid-Style Listing with a Mobile-First Approach
 3. Featured Image, "I Found It!" - with a Confirmatory Popup and Direct Phone Call: You are about to call Pepe, the owner of the animal named X.
-4. Infinite Scroll (React Hook)
-5. Basic Header
-6. Base Card: Condensing Minimal Information
+4. Basic Header
+5. Base Card: Condensing Minimal Information
+6. About Page
+7. Create Post Page
 
-1.1.0
+Version 1.1.0 - TBA
 
-1. Floating Button for Creating an Ad and Creation Form
-2. Database with Express:
-    Animal Name (Required)
-    Animal Type (Required)
-    Description (Optional)
-    Owner's Name
-    Contact Phone
+1. Refactor jsx for tsx
+2. Create a Database with Express:
+
+POST and GET method in order to create and show animal posts.
     
 3. View Details on the Card: Name, Description, Last Seen On
+4. Infinite Scroll (React Hook) once the GET method is prepared
 
-1.2.0
+Version 1.2.0
 
 1. Filters for:
 
@@ -55,6 +54,6 @@ Web application with React and Tailwind (oriented towards mobile-first) for post
 
 2. "Happy Endings" Section (Blog Format)
 
-1.3.0
+Version 1.3.0
 
-1. Search Functionality?
+1. Searchbar
