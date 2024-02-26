@@ -8,7 +8,15 @@ import About from './components/About';
 import CreateForm from './components/CreateForm';
 import { PlusCircle } from "react-feather";
 
-const animals = [
+interface Animal {
+  name: string;
+  description: string;
+  image: string;
+  location: string;
+  lastSeen: string;
+}
+
+const animals: Animal[] = [
   {
     name: 'Toby',
     description:'Mezcla de gato montés con español, rayas naranjas y blancas. Tiene las patas blancas y los amarillos.',
@@ -35,7 +43,7 @@ const animals = [
     description: 'Gato de color canela con rayas marrones. Ojos amarillos, es muy tranquilo. Desde hace dos meses lleva un collar negro.',
     image: bgImage1,
     location: 'Zaragoza, España',
-    lastSeen: '2 de septimebre',
+    lastSeen: '2 de septiembre',
   },
   {
     name: 'Kenai',
@@ -72,7 +80,6 @@ const animals = [
     location: 'Málaga, España',
     lastSeen: '20 de abril',
   },
-
 ];
 
 function App() {
@@ -80,33 +87,32 @@ function App() {
     <Routes>
       <Route path="/" element={
         <>
-        <Header />
-         <div className="text-center">
-           <h2 className="text-white text-2xl mt-4 mb-4">Últimas publicaciones</h2>
-         </div>
-         <div className="container mx-auto grid pt-8 pb-8">
-           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
-             {animals.map((animal, index) => (
-               <AnimalCard key={index} animal={animal} />
-             ))}
-           </div>
-         </div>
-         <a className="btn btn-danger" style={{position: 'fixed', top: '92%', right: 10}} href="crear-anuncio">
+          <Header />
+          <div className="text-center">
+            <h2 className="text-white text-2xl mt-4 mb-4">Últimas publicaciones</h2>
+          </div>
+          <div className="container mx-auto grid pt-8 pb-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+              {animals.map((animal, index) => (
+                <AnimalCard key={index} animal={animal} />
+              ))}
+            </div>
+          </div>
+          <a className="btn btn-danger" style={{position: 'fixed', top: '92%', right: 10}} href="crear-anuncio">
             <PlusCircle />
           </a>
         </>
-      }
-      />
+      } />
       <Route path="/sobre-nosotros" element={
         <>
-        <Header />
-        <About />
+          <Header />
+          <About />
         </>
       } />
       <Route path="/crear-anuncio" element={
         <>
-        <Header />
-        <CreateForm />
+          <Header />
+          <CreateForm />
         </>
       } />
     </Routes>
