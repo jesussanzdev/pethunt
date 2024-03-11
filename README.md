@@ -22,7 +22,7 @@ You may also see any lint errors in the console.
 
 Web application with React and Tailwind (oriented towards mobile-first) for posting lost animal ads in your area. The ads will expire after 30 days of being posted. The goal is to centralize and streamline all lost animals in one application through which you can directly contact the owner.
 
-## Roadmap
+## Roadmap Current version 1.1.0
 
 Version 1.0 - Done
 
@@ -34,17 +34,21 @@ Version 1.0 - Done
 6. About Page
 7. Create Post Page
 
-Version 1.1.0 - TBA
+Version 1.1.0 
 
 1. Refactor jsx for tsx
-2. Create a Database with Express:
+2. Estructure browser routing
+
+Version 1.2.0
+
+1. Create a Database with Express:
 
 POST and GET method in order to create and show animal posts.
     
-3. View Details on the Card: Name, Description, Last Seen On
-4. Infinite Scroll (React Hook) once the GET method is prepared
+2. View Details on the Card: Name, Description, Last Seen On
+3. Infinite Scroll (React Hook) once the GET method is prepared
 
-Version 1.2.0
+Version 1.3.0
 
 1. Filters for:
 
@@ -52,8 +56,7 @@ Version 1.2.0
     Distance from My Location
     Ad Expiration after 40 Days
 
-2. "Happy Endings" Section (Blog Format)
-
-Version 1.3.0
+Version 1.4.0
 
 1. Searchbar
+2. "Happy Endings" Section (Blog Format)
