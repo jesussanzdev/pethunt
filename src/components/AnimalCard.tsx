@@ -1,7 +1,7 @@
 import React from 'react';
 import ContactButton from './ContactButton';
 import ImageCard from './ImageCard';
-import defaultImage from '../assets/default.png';
+import defaultImage from '../assets/default.webp';
 
 interface Animal {
   image?: string;

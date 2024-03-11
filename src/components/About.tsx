@@ -1,5 +1,5 @@
 import React from 'react';
-import shelter from '../assets/shelter.png';
+import shelter from '../assets/shelter.webp';
 
 const About: React.FC = () => {
   return (
