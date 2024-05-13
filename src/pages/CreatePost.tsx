@@ -1,16 +1,8 @@
 import React, { useState, ChangeEvent, FormEvent } from 'react';
+import { PostFormProps } from '../models/PostForm';
 
-interface FormData {
-  name: string;
-  description: string;
-  image: string;
-  location: string;
-  telephone: string;
-  lastSeen: string;
-}
-
-const AnimalForm: React.FC = () => {
-  const [formData, setFormData] = useState<FormData>({
+const CreatePost: React.FC = () => {
+  const [formData, setFormData] = useState<PostFormProps>({
     name: '',
     description: '',
     image: '',
@@ -29,7 +21,6 @@ const AnimalForm: React.FC = () => {
 
   const handleSubmit = (event: FormEvent) => {
     event.preventDefault();
-    // Aquí puedes realizar acciones con los datos del formulario, como enviarlos a un servidor o guardarlos en un estado global.
     console.log('Datos del Animal:', formData);
   };
 
@@ -86,7 +77,7 @@ const AnimalForm: React.FC = () => {
           />
         </div>
         <div className="mb-4">
-          <label htmlFor="location" className="block text-sm font-medium text-white">Teléfono de contacto</label>
+          <label htmlFor="telephone" className="block text-sm font-medium text-white">Teléfono de contacto</label>
           <input
             placeholder="867 732 732"
             type="text"
@@ -116,4 +107,4 @@ const AnimalForm: React.FC = () => {
   );
 };
 
-export default AnimalForm;
+export default CreatePost;

@@ -1,9 +1,5 @@
-import React, { ReactNode, HTMLProps } from 'react';
-
-interface ImageCardProps extends HTMLProps<HTMLDivElement> {
-  imgSrc: string;
-  children?: ReactNode;
-}
+import React from 'react';
+import { ImageCardProps } from '../models/ImageCard';
 
 const ImageCard: React.FC<ImageCardProps> = ({ children, imgSrc, ...props }) => {
   return (

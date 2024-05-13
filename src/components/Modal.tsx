@@ -1,11 +1,6 @@
-import React, { ReactNode } from 'react';
+import React from 'react';
 import { X } from "react-feather";
-
-interface ModalProps {
-  open: boolean;
-  onClose: () => void;
-  children: ReactNode;
-}
+import { ModalProps } from '../models/Modal';
 
 const Modal: React.FC<ModalProps> = ({ open, onClose, children }) => {
   return (

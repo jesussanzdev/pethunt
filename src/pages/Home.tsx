@@ -1,17 +1,10 @@
 import { PlusCircle } from "react-feather";
-import AnimalCard from "./AnimalCard";
+import AnimalCard from "../components/AnimalCard";
 import bgImage1 from '../assets/1.webp';
 import bgImage2 from '../assets/2.webp';
+import { AnimalProps } from "../models/Animal";
 
-interface Animal {
-    name: string;
-    description: string;
-    image: string;
-    location: string;
-    lastSeen: string;
-  }
-  
-const animals: Animal[] = [
+const fakeAnimals: AnimalProps[] = [
 {
     name: 'Toby',
     description:'Mezcla de gato montés con español, rayas naranjas y blancas. Tiene las patas blancas y los amarillos.',
@@ -85,7 +78,7 @@ const Home: React.FC = () => {
           </div>
           <div className="container mx-auto grid pt-8 pb-8">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
-              {animals.map((animal, index) => (
+              {fakeAnimals.map((animal, index) => (
                 <AnimalCard key={index} animal={animal} />
               ))}
             </div>
