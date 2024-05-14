@@ -1,0 +1,75 @@
+const express = require('express');
+
+const app = express()
+
+const animals = [
+    {
+        name: 'Toby',
+        description:'Mezcla de gato montés con español, rayas naranjas y blancas. Tiene las patas blancas y los amarillos.',
+        image: '',
+        location: 'Zaragoza, España',
+        lastSeen: '27 de septiembre',
+    },
+    {
+        name: 'Luna',
+        description:'Luna es una perrita de raza mestiza, de tamaño mediano, con un pelaje suave y color blanco y negro. Tiene una mancha negra en el pecho y una oreja caída.',
+        image: '',
+        location: 'Parque del Retiro en Madrid, España',
+        lastSeen: '15 de septiembre',
+    },
+    {
+        name: 'Simba',
+        description: 'Simba es un gato siamés de ojos azules intensos. Es de tamaño pequeño y tiene un collar rojo con una chapa de identificación.',
+        image: '',
+        location: 'Barcelona, España',
+        lastSeen: '5 de septiembre',
+    },
+    {
+        name: 'Tommy',
+        description: 'Gato de color canela con rayas marrones. Ojos amarillos, es muy tranquilo. Desde hace dos meses lleva un collar negro.',
+        image: '',
+        location: 'Zaragoza, España',
+        lastSeen: '2 de septiembre',
+    },
+    {
+        name: 'Kenai',
+        description:'Mezcla de gato montés con español, rayas naranjas y blancas. Tiene las patas blancas y los amarillos.',
+        image: '',
+        location: 'Zaragoza, España',
+        lastSeen: '27 de agosto',
+    },
+    {
+        name: 'Miau',
+        description: 'Miau es un gato de pelo largo y negro con ojos verdes. Es un felino tranquilo y curioso. Se perdió en Sevilla, España, el 8 de agosto.',
+        image: '',
+        location: 'Sevilla, España',
+        lastSeen: '8 de agosto',
+    },
+    {
+        name: 'Bobby',
+        description: 'Bobby es un perro Labrador Retriever de pelaje dorado y amigable. Lleva un collar azul con una placa de identificación. Se perdió en Valencia, España, el 12 de junio.',
+        image: '',
+        location: 'Valencia, España',
+        lastSeen: '12 de junio',
+    },
+    {
+        name: 'Rex',
+        description: 'Rex es un perro pastor alemán de pelaje negro y tostado. Es amigable y bien entrenado. Lleva un collar rojo con una etiqueta de identificación.',
+        image: '',
+        location: 'Madrid, España',
+        lastSeen: '15 de mayo',
+    },
+    {
+        name: 'Pelusa',
+        description: 'Pelusa es una perrita mestiza de tamaño mediano. Su pelaje es blanco y negro. Tiene una personalidad juguetona y cariñosa. Se perdió en Málaga, España, el 20 de abril.',
+        image: '',
+        location: 'Málaga, España',
+        lastSeen: '20 de abril',
+    }
+];
+
+app.get("/api/animals", (req, res) => {
+    res.json({"animals": animals})
+})
+
+app.listen(5000, () => {console.log("Server started on port 5000")});
